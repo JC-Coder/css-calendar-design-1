@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,200;1,400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;
+    background-image: url('./bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.calendar {
+    height: 480px;
+    width: 700px;
+    background-color: rgb(225, 220, 220);
+    border-radius: 10px;
+}
+
+.calendar header {
+    height: 50px;
+    background-color: red;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 15px;
+}
+
+.calendar header .calendar-arrow i{
+    color: white;
+    font-size: 23px;
+}
+
+.calendar header .date p {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+.calendar header .date .month {
+    letter-spacing: 0.8px;
+    font-size: 18px;
+}
+
+.calendar-content {
+    padding: 5px 10px;
+}
+
+.calendar-content .title div {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 31px;
+    margin-top: 25px;
+}
+
+.calendar-content .title div p{
+    color: red;
+    font-weight: 600;
+}
+
+.calendar-content .calendar-date div {
+    display: flex;
+    justify-content: center;
+}
+
+.calendar-content .calendar-date div button {
+    height: 60px;
+    width: 90px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.396);
+    border-radius: 0;
+    border-right: none;
+    background-color: white;
+}
+
+.calendar-content .calendar-date div button:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.396);
+}
+
+.calendar-content .calendar-date div button:hover{
+    background-color: red;
+    color: white;
+}
+
+.calendar-content .calendar-date .mt-0 button {
+    border-top: none;
+}
+
+.calendar-content .calendar-date div .date-active{
+    background-color: red;
+    color: white;
+}
+
+.calendar-content .calendar-date div .btn-empty{
+    background-color: transparent;
+}
